@@ -16,6 +16,8 @@ namespace TheBlogProject.Models
         public int Id { get; set; }
 
         // Foreign Key - Primary Key in Blog Class
+
+        [Display(Name = "Blog Name")]
         public int BlogId { get; set; }
 
         public string BlogUserId { get; set; }

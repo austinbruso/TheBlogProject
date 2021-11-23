@@ -36,8 +36,7 @@ namespace TheBlogProject
                options.UseNpgsql(
                    Configuration.GetConnectionString("DefaultConnection")));
 
-
-
+            services.AddRazorPages();
 
             services.AddDatabaseDeveloperPageExceptionFilter();
 
@@ -45,8 +44,10 @@ namespace TheBlogProject
             //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddIdentity<BlogUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddDefaultUI()
+                .AddDefaultTokenProviders()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-
+          
             services.AddControllersWithViews();
         }
 

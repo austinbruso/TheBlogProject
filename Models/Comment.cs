@@ -28,9 +28,9 @@ namespace TheBlogProject.Models
         public string Body { get; set; }
 
         public DateTime Created { get; set; }
-        public DateTime Updated { get; set; }
-        public DateTime Moderated { get; set; }
-        public DateTime Deleted { get; set; }
+        public DateTime? Updated { get; set; }
+        public DateTime? Moderated { get; set; }
+        public DateTime? Deleted { get; set; }
 
         [StringLength(500, ErrorMessage = "The {0} must be at least {2} and no more that {1} characters in long.", MinimumLength = 2)]
         [Display(Name = "Moderated Comment")]
