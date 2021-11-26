@@ -332,6 +332,9 @@
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.26.1919"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/5.0.12": {
@@ -851,6 +854,9 @@
             "assemblyVersion": "5.0.12.0",
             "fileVersion": "5.0.1221.51310"
           }
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/5.0.12": {
