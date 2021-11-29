@@ -46,7 +46,6 @@ namespace TheBlogProject.Controllers
 
             return View(post);
         }
-
         // GET: Posts/Create
         public IActionResult Create()
         {
