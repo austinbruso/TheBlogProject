@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using TheBlogProject.Data;
 using TheBlogProject.Models;
 using TheBlogProject.Services;
+using TheBlogProject.ViewModels;
 
 namespace TheBlogProject
 {
@@ -47,6 +48,11 @@ namespace TheBlogProject
             // Register my custom DataService Class
             services.AddScoped<DataService>();
 
+
+            //Register an preconfigured Instance of the MailSettings Class
+            services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
+
+            services.AddScoped<IBlogEmailSender, EmailService>();
 
 
 

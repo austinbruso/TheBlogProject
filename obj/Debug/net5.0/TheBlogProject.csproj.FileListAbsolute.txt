@@ -987,3 +987,6 @@ C:\Users\austi\OneDrive\TheBlogProject\obj\Debug\net5.0\TheBlogProject.pdb
 C:\Users\austi\OneDrive\TheBlogProject\obj\Debug\net5.0\TheBlogProject.genruntimeconfig.cache
 C:\Users\austi\OneDrive\TheBlogProject\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\austi\OneDrive\TheBlogProject\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\austi\OneDrive\TheBlogProject\bin\Debug\net5.0\MailKit.dll
+C:\Users\austi\OneDrive\TheBlogProject\bin\Debug\net5.0\MimeKit.dll
+C:\Users\austi\OneDrive\TheBlogProject\bin\Debug\net5.0\BouncyCastle.Crypto.dll

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,19 +12,22 @@ namespace TheBlogProject.Services
 {
     public class DataService
     {
-        private readonly ApplicationDbContext _dbcontext;
+        private readonly ApplicationDbContext _dbContext;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<BlogUser> _userManager;
 
         public DataService(ApplicationDbContext dbcontext, RoleManager<IdentityRole> roleManager, UserManager<BlogUser> userManager)
         {
-            _dbcontext = dbcontext;
+            _dbContext = dbcontext;
             _roleManager = roleManager;
             _userManager = userManager;
         }
 
         public async Task ManageDataAsync()
         {
+            //Create the DB from the Migration
+            await _dbContext.Database.MigrateAsync();
+
             await SeedRolesAsync();
 
 
@@ -31,11 +35,11 @@ namespace TheBlogProject.Services
 
         }
 
-        private async Task SeedRolesAsync()
+        public async Task SeedRolesAsync()
         {
             // If there are already Roles in the system, do nothing.
 
-            if (_dbcontext.Roles.Any()) return;
+            if (_dbContext.Roles.Any()) return;
 
             // Otherwise we want to create a few Roles
             foreach(var role in Enum.GetNames(typeof(BlogRole)))
@@ -46,11 +50,14 @@ namespace TheBlogProject.Services
         }
 
 
-        private async Task SeedUserAsync()
+        public async Task SeedUserAsync()
         {
-            // If there are already Roles in the system, do nothing.
+            // If there are already users in the system, do nothing.
 
-            if (_dbcontext.Users.Any()) return;
+            if (_dbContext.Users.Any())
+            {
+                return;
+            }
 
 
             // Step 1: Creates a new instance of BlogUser
@@ -67,7 +74,7 @@ namespace TheBlogProject.Services
 
             // Step 2: Use the UserManager to create a new user that is defined by a admin Manager
 
-            await _userManager.CreateAsync(adminUser, "Abc1234!");
+            await _userManager.CreateAsync(adminUser, "Abc&123!");
 
 
             // Add the new user to the Administrator Role
@@ -83,11 +90,11 @@ namespace TheBlogProject.Services
                 UserName = "JaneDoe@mailinator.com",
                 FirstName = "Jane",
                 LastName = "Doe",
-                DisplayName = "The Developer",
+                DisplayName = "The Other Developer",
                 EmailConfirmed = true
             };
 
-            await _userManager.CreateAsync(modUser, "Abc1234!");
+            await _userManager.CreateAsync(modUser, "Abc&123!");
             await _userManager.AddToRoleAsync(modUser, BlogRole.Moderator.ToString());
 
 

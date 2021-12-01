@@ -16,7 +16,7 @@ namespace TheBlogProject.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 63)
-                .HasAnnotation("ProductVersion", "5.0.10")
+                .HasAnnotation("ProductVersion", "5.0.12")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -203,6 +203,11 @@ namespace TheBlogProject.Data.Migrations
                     b.Property<string>("ContentType")
                         .HasColumnType("text");
 
+                    b.Property<string>("DisplayName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("character varying(256)");
@@ -294,10 +299,10 @@ namespace TheBlogProject.Data.Migrations
                     b.Property<DateTime>("Created")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<DateTime>("Deleted")
+                    b.Property<DateTime?>("Deleted")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<DateTime>("Moderated")
+                    b.Property<DateTime?>("Moderated")
                         .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("ModeratedBody")
@@ -313,7 +318,7 @@ namespace TheBlogProject.Data.Migrations
                     b.Property<int>("PostId")
                         .HasColumnType("integer");
 
-                    b.Property<DateTime>("Updated")
+                    b.Property<DateTime?>("Updated")
                         .HasColumnType("timestamp without time zone");
 
                     b.HasKey("Id");
