@@ -1,5 +1,45 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@using TheBlogProject.ViewModels
+@model ContactMe
+
+
+
+    <div id="main-wrapper">
+        <div class="site-wrapper-reveal">
+
+            <div class="contact-us-page-area section-space--pt_70 section-space--pb_100">
+                <div class="container">
+
+                    <div class="contact-from section-space--pt_80">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="section-title" data-aos="fade-up">
+                                    <h3 class="title mb-30">Get In Touch</h3>
+                                </div>
+                                <form asp-controller="Home" asp-action="Contact"  id="#contact-form" class="contact-us-form" method="post">
+                                    <div class="single-input-box">
+                                        <input type="text" name="con_name" placeholder="Name">
+                                    </div>
+                                    <div class="single-input-box">
+                                        <input type="email" name="con_email" placeholder="Email">
+                                    </div>
+                                    <div class="single-input-box">
+                                        <input type="text" name="con_phone" placeholder="Phone">
+                                    </div>
+                                    <div class="single-input-box">
+                                        <textarea name="con_message" placeholder="Massage"></textarea>
+                                    </div>
+                                    <div class="single-input-box">
+                                        <button type="submit" class="btn-primary btn-large">Send Message <i class="icofont-long-arrow-right"></i></button>
+                                    </div>
+                                    <p class="form-messege"></p>
+                                </form>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
