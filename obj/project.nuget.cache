@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PfcfmSqjfYnv52+CvsOZMp91m3FmY0ZQUI8X+5Ryt3jA3Iw7mYcBVD8LDb0o7FuzA7I1lzFx+/Ld25g5m8wjKA==",
+  "dgSpecHash": "G8rpmvfYNlI5SaIrJpYQBGAfcMXWnRp5qBIPKtdmSaxDTTPspg4PQaDV4DBWPIGUwi67lWh6NAiyYXUtib5vEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\austi\\OneDrive\\code\\austinbruso\\TheBlogProject\\TheBlogProject.csproj",
+  "projectFilePath": "C:\\Users\\austi\\Downloads\\TheBlogProject\\TheBlogProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\austi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\austi\\.nuget\\packages\\mailkit\\2.15.0\\mailkit.2.15.0.nupkg.sha512",
