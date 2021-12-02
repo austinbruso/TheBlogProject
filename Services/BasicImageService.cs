@@ -29,9 +29,10 @@ namespace TheBlogProject.Services
             return ms.ToArray();
         }
 
-        public Task<byte[]> EncodeImageAsync(string fileName)
+        public async Task<byte[]> EncodeImageAsync(string fileName)
         {
-            throw new NotImplementedException();
+            var file = $"{Directory.GetCurrentDirectory()} / wwwroot/assets/images/{fileName}";
+            return await File.ReadAllBytesAsync(file);
         }
 
         public int Size(IFormFile file)
