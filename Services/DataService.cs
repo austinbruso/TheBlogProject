@@ -28,9 +28,10 @@ namespace TheBlogProject.Services
             //Create the DB from the Migration
             await _dbContext.Database.MigrateAsync();
 
+            // Task 1: Seed a few roles into the system
             await SeedRolesAsync();
 
-
+            // Task 2: Seed a few users into the system
             await SeedUserAsync();
 
         }
@@ -77,11 +78,11 @@ namespace TheBlogProject.Services
             await _userManager.CreateAsync(adminUser, "Abc&123!");
 
 
-            // Add the new user to the Administrator Role
+            // Step 3: Add the new user to the Administrator Role
             await _userManager.AddToRoleAsync(adminUser, BlogRole.Administrator.ToString());
 
 
-            //Create a Moderator User
+            //Stp 4: Create a Moderator User
 
             var modUser = new BlogUser()
             {

@@ -59,8 +59,9 @@ namespace TheBlogProject
 
 
 
+            //Register the Slug Service
+            services.AddScoped<ISlugService, BasicSlugService>();
 
-          
             services.AddControllersWithViews();
         }
 

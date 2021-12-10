@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\austi\\OneDrive\\New folder\\TheBlogProject\\TheBlogProject.csproj": {}
+    "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\TheBlogProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\austi\\OneDrive\\New folder\\TheBlogProject\\TheBlogProject.csproj": {
+    "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\TheBlogProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\austi\\OneDrive\\New folder\\TheBlogProject\\TheBlogProject.csproj",
+        "projectUniqueName": "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\TheBlogProject.csproj",
         "projectName": "TheBlogProject",
-        "projectPath": "C:\\Users\\austi\\OneDrive\\New folder\\TheBlogProject\\TheBlogProject.csproj",
+        "projectPath": "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\TheBlogProject.csproj",
         "packagesPath": "C:\\Users\\austi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\austi\\OneDrive\\New folder\\TheBlogProject\\obj\\",
+        "outputPath": "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
