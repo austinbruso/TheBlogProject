@@ -64,8 +64,8 @@ namespace TheBlogProject.Services
             // Step 1: Creates a new instance of BlogUser
             var adminUser = new BlogUser()
             {
-                Email = "AustinBruso@Hotmail.com",
-                UserName = "AustinBruso@Hotmail.com",
+                Email = "austinbruso@hotmail.com",
+                UserName = "austinbruso@hotmail.com",
                 FirstName = "Austin",
                 LastName = "Bruso",
                 DisplayName = "The Developer",
