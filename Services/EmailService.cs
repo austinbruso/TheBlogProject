@@ -47,9 +47,6 @@ namespace TheBlogProject.Services
             email.To.Add(MailboxAddress.Parse(emailTo));
             email.Subject = subject;
 
-            //var builder = new BodyBuilder();
-            //builder.HtmlBody = htmlMessage;
-
             var builder = new BodyBuilder()
             {
                 HtmlBody = htmlMessage

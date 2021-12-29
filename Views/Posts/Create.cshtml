@@ -62,5 +62,11 @@
 </div>
 
 @section Scripts {
+
+    <script>
+    tinymce.init({
+      selector: '#Content'
+    });
+  </script>
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

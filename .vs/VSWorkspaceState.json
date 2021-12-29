@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Models",
+    "\\Services"
   ],
   "SelectedNode": "\\TheBlogProject.sln",
   "PreviewInSolutionExplorer": false

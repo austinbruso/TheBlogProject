@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hWy6Ln4SN00dv533ZKnGiQTeSVNS6IeAnp4PuyTdLoxcR7G/DTcdA7/acYAh2Qspf7it/aRPCfW967ZSpm+NLQ==",
+  "dgSpecHash": "0DBFGOGsbJ5U6t7b3I+WS70rJEr3Io9x05IsutNrqix+yVSKfzGl1ZvgHK3LxHo/zrZbPjWm3oUMvIIRC/EXeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\austi\\Source\\Repos\\TheBlogProject1\\TheBlogProject.csproj",
+  "projectFilePath": "C:\\Users\\austi\\Source\\Repos\\austinbruso\\TheBlogProject\\TheBlogProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\austi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\austi\\.nuget\\packages\\mailkit\\2.15.0\\mailkit.2.15.0.nupkg.sha512",
@@ -146,7 +146,11 @@
     "C:\\Users\\austi\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\austi\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\austi\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\austi\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\austi\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
