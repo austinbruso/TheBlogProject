@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Models",
-    "\\Services"
+    "\\Services",
+    "\\Views",
+    "\\Views\\Blogs",
+    "\\Views\\Posts"
   ],
-  "SelectedNode": "\\TheBlogProject.sln",
   "PreviewInSolutionExplorer": false
 }
