@@ -12,7 +12,7 @@ namespace TheBlogProject.Models
         // Primary Key
         public int Id { get; set; }
         public int PostId { get; set; }
-        public int BlogUserId { get; set; }
+        public string BlogUserId { get; set; }
 
         [Required]
         [StringLength(25, ErrorMessage="The {0} must be at least {2} and no more than maximum characters long.", MinimumLength = 2)]
