@@ -4,6 +4,7 @@
     "\\Controllers",
     "\\wwwroot",
     "\\wwwroot\\assets",
+    "\\wwwroot\\assets\\images",
     "\\wwwroot\\assets\\js"
   ],
   "SelectedNode": "\\TheBlogProject.sln",
