@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\austi\\Source\\Repos\\austinbruso\\TheBlogProject\\TheBlogProject.csproj": {}
+    "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\TheBlogProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\austi\\Source\\Repos\\austinbruso\\TheBlogProject\\TheBlogProject.csproj": {
+    "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\TheBlogProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\austi\\Source\\Repos\\austinbruso\\TheBlogProject\\TheBlogProject.csproj",
+        "projectUniqueName": "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\TheBlogProject.csproj",
         "projectName": "TheBlogProject",
-        "projectPath": "C:\\Users\\austi\\Source\\Repos\\austinbruso\\TheBlogProject\\TheBlogProject.csproj",
+        "projectPath": "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\TheBlogProject.csproj",
         "packagesPath": "C:\\Users\\austi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\austi\\Source\\Repos\\austinbruso\\TheBlogProject\\obj\\",
+        "outputPath": "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\austi\\AppData\\Roaming\\NuGet\\NuGet.Config",

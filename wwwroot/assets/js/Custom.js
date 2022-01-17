@@ -11,7 +11,7 @@ function AddTag() {
         //Trigger my sweet alert for whatever condition is contained in the searchResult var
 
         swalWithDarkButton.fire({
-            html: `<span class='font-weight-bolder>${searchResult.toUpperCase()}</span>`  
+            html: `<span class='font-weight-bolder>${searchResult.toUpperCase()}</span>`
         });
     }
     else {
@@ -66,7 +66,7 @@ function search(str) {
     }
 
     var tagsEl = document.getElementById('TagList');
-    if (tagEl) {
+    if (tagsEl) {
         let options = tagsEl.options;
         for (let index = 0; index < options.length; index++) {
             if (options[index].value == str)

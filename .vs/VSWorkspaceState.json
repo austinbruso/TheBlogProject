@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Enums",
-    "\\Models",
-    "\\Views",
-    "\\Views\\Blogs",
-    "\\Views\\Posts"
+    "\\Controllers",
+    "\\wwwroot",
+    "\\wwwroot\\assets",
+    "\\wwwroot\\assets\\js"
   ],
-  "SelectedNode": "\\TheBlogProject.sln",
+  "SelectedNode": "\\Controllers\\PostsController.cs",
   "PreviewInSolutionExplorer": false
 }
