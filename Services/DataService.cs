@@ -68,7 +68,7 @@ namespace TheBlogProject.Services
                 UserName = "austinbruso@hotmail.com",
                 FirstName = "Austin",
                 LastName = "Bruso",
-                DisplayName = "The Developer",
+                DisplayName = "Developer",
                 EmailConfirmed = true
             };
 

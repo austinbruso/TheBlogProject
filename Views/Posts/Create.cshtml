@@ -53,10 +53,10 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <button name="Add" type="button" class="btn btn-primary btn-small btn-block">Add</button>
+                                <button class="option btn btn-primary btn-small btn-block" onclick="AddTag()" id="TagEntry" name="Add" type="button">Add</button>
                             </div>
                             <div class="col">
-                                <button name="delete" type="button" class="btn btn-small btn-primary btn-block">Delete</button>
+                                <button onclick="DeleteTag()" name="Delete" type="button" class="btn btn-small btn-primary btn-block">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -91,11 +91,13 @@
 </div>
 
 @section Scripts {
-
+   
+    let tagValues = '@ViewData["TagValues"]'; 
     <script>
     tinymce.init({
       selector: '#Content'
     });
   </script>
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+   
+  <script src=~/assets/js/Custom.js></script>
 }

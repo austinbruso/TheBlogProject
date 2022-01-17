@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Enums",
     "\\Models",
-    "\\Services",
     "\\Views",
     "\\Views\\Blogs",
     "\\Views\\Posts"
