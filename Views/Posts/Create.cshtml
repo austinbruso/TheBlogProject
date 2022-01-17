@@ -41,7 +41,7 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col">
-                        <label class="control-label">Manage Tags</label>
+                       <label class="control-label">Manage Tags</label>
                     </div>
                 </div>
                
@@ -90,17 +90,18 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-
+;e
 @section Scripts {
-
-    <script src="/assets/js/Custom.js"></script>
    
-    let tagValues = "@ViewData["TagValues"]"; 
+   
     <script>
+        let tagValues = "@ViewData["TagValues"]"; 
     tinymce.init({
       selector: '#Content'
     });
   </script>
+
+  <script src="/assets/js/Custom.js"></script>
 
  
    

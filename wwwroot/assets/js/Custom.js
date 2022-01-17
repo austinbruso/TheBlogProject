@@ -44,7 +44,7 @@ $("form").on("submit", function () {
 })
 
 //Look for the TagValues variable to see if it has data
-if (tagValue != '') {
+if (tagValues != '') {
     let tagArray = tagValues.split(",");
     for (let loop = 0; loop < tagArray.length; loop++) {
         //Load up or replace the options that we have
@@ -82,7 +82,7 @@ const swalWithDarkButton = Swal.mixin({
     customClass: {
         confirmButton: 'btn btn-danger btn-sm btn-block btn-outline-dark'
     },
-    imageUrl: '/images/oops.jfif',
+    imageUrl: '/images/oops.jpg',
     timer: 3000,
     buttonsStyling: false
 });
