@@ -11,7 +11,7 @@ function AddTag() {
         //Trigger my sweet alert for whatever condition is contained in the searchResult var
 
         swalWithDarkButton.fire({
-            html: `<span class='font-weight-bolder>${searchResult.toUpperCase()}</span>`
+            html: `<span class='font-weight-bolder'>${searchResult.toUpperCase()}</span>`,
         });
     }
     else {
@@ -26,11 +26,23 @@ function AddTag() {
 
 function DeleteTag() {
     let tagCount = 1;
+
+    let tagList = document.getElementById("TagList");
+  
+        if (!tagList) return false;
+
+        if (tagList.selectedIndex == -1) {
+            swalWithDarkButton.fire({
+                html: "<span class='font-weight-bolder'>Choose a Tag before deleting</span>"
+            });
+
+            return true;
+
+        }
+
     while (tagCount > 0) {
-        let tagList = document.getElementById("TagList");
-        let selectedIndex = tagList.selectedIndex;
-        if (selectedIndex >= 0) {
-            tagList.options[selectedIndex] = null;
+        if (tagList.selectedIndex >= 0) {
+            tagList.options[tagList.selectedIndex] = null;
             --tagCount;
         }
         else
@@ -83,6 +95,6 @@ const swalWithDarkButton = Swal.mixin({
         confirmButton: 'btn btn-danger btn-sm btn-block btn-outline-dark'
     },
     imageUrl: '../assets/images/oops.png',
-    timer: 3000,
+    timer: 6000,
     buttonsStyling: false
 });
