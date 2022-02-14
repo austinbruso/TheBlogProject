@@ -3978,3 +3978,8 @@ C:\Users\austi\OneDrive\Desktop\TheBlogProject\obj\Debug\net5.0\TheBlogProject.d
 C:\Users\austi\OneDrive\Desktop\TheBlogProject\obj\Debug\net5.0\ref\TheBlogProject.dll
 C:\Users\austi\OneDrive\Desktop\TheBlogProject\obj\Debug\net5.0\TheBlogProject.pdb
 C:\Users\austi\OneDrive\Desktop\TheBlogProject\obj\Debug\net5.0\TheBlogProject.genruntimeconfig.cache
+C:\Users\austi\OneDrive\Desktop\TheBlogProject\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\austi\OneDrive\Desktop\TheBlogProject\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\austi\OneDrive\Desktop\TheBlogProject\bin\Debug\net5.0\X.PagedList.dll
+C:\Users\austi\OneDrive\Desktop\TheBlogProject\bin\Debug\net5.0\X.PagedList.Mvc.Core.dll
+C:\Users\austi\OneDrive\Desktop\TheBlogProject\bin\Debug\net5.0\X.PagedList.Web.Common.dll

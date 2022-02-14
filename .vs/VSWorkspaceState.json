@@ -2,11 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
+    "\\Views",
+    "\\Views\\Home",
     "\\wwwroot",
     "\\wwwroot\\assets",
     "\\wwwroot\\assets\\images",
     "\\wwwroot\\assets\\js"
   ],
-  "SelectedNode": "\\TheBlogProject.sln",
+  "SelectedNode": "\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
