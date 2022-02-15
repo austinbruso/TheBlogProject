@@ -48,7 +48,7 @@
                                 </div>
                             </div> 
                             <h3 class="title mb-2">
-                                <a href="blog-details.html">
+                                <a asp-controller="Posts" asp-action="BlogPostIndex" asp-route-id="@blog.Id">
                                     @blog.Name
                                 </a>
                             </h3>

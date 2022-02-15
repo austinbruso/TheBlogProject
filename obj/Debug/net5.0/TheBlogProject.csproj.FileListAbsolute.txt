@@ -3983,3 +3983,4 @@ C:\Users\austi\OneDrive\Desktop\TheBlogProject\bin\Debug\net5.0\Newtonsoft.Json.
 C:\Users\austi\OneDrive\Desktop\TheBlogProject\bin\Debug\net5.0\X.PagedList.dll
 C:\Users\austi\OneDrive\Desktop\TheBlogProject\bin\Debug\net5.0\X.PagedList.Mvc.Core.dll
 C:\Users\austi\OneDrive\Desktop\TheBlogProject\bin\Debug\net5.0\X.PagedList.Web.Common.dll
+C:\Users\austi\OneDrive\Desktop\TheBlogProject\obj\Debug\net5.0\Razor\Views\Posts\BlogPostIndex.cshtml.g.cs
