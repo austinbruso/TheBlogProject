@@ -15,12 +15,13 @@ using X.PagedList;
 
 namespace TheBlogProject.Controllers
 {
-    public class PostsController : Controller
+    public class  PostsController : Controller
     {
         private readonly ApplicationDbContext _context;
         private readonly ISlugService _slugService;
         private readonly IImageService _imageService;
         private readonly UserManager<BlogUser> _userManager;
+        private readonly BlogSearchService _blogSearchService;
 
         public PostsController(ApplicationDbContext context, ISlugService slugService, IImageService imageService, UserManager<BlogUser> userManager)
         {
@@ -28,6 +29,7 @@ namespace TheBlogProject.Controllers
             _slugService = slugService;
             _imageService = imageService;
             _userManager = userManager;
+
         }
 
         public async Task<IActionResult> SearchIndex(int? page, string searchTerm)
@@ -37,22 +39,7 @@ namespace TheBlogProject.Controllers
             var pageNumber = page ?? 1;
             var pageSize = 5;
 
-            var posts = _context.Posts.Where(
-                p => p.ReadyStatus == ReadyStatus.ProductionReady).AsQueryable();
-            if(searchTerm != null)
-            {
-                posts = posts.Where(
-                    p => p.Title.Contains(searchTerm) ||
-                    p.Abstract.Contains(searchTerm) ||
-                    p.Content.Contains(searchTerm) ||
-                    p.Comments.Any(c => c.Body.Contains(searchTerm) ||
-                                        c.ModeratedBody.Contains(searchTerm) ||
-                                        c.BlogUser.FirstName.Contains(searchTerm) ||
-                                        c.BlogUser.LastName.Contains(searchTerm) ||
-                                        c.BlogUser.Email.Contains(searchTerm)));      
-            }
-
-            posts = posts.OrderByDescending(p => p.Created);
+            var posts = _blogSearchService.Search(searchTerm);
             return View(await posts.ToPagedListAsync(pageNumber, pageSize));
 
 

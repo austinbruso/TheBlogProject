@@ -48,6 +48,7 @@ namespace TheBlogProject
             // Register my custom DataService Class
             services.AddScoped<DataService>();
 
+            services.AddScoped<BlogSearchService>();
 
             //Register an preconfigured Instance of the MailSettings Class
             services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
