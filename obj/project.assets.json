@@ -10403,11 +10403,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\TheBlogProject.csproj",
+      "projectUniqueName": "C:\\Users\\austi\\OneDrive\\Desktop\\Repos\\TheBlogProject.csproj",
       "projectName": "TheBlogProject",
-      "projectPath": "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\TheBlogProject.csproj",
+      "projectPath": "C:\\Users\\austi\\OneDrive\\Desktop\\Repos\\TheBlogProject.csproj",
       "packagesPath": "C:\\Users\\austi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\austi\\OneDrive\\Desktop\\TheBlogProject\\obj\\",
+      "outputPath": "C:\\Users\\austi\\OneDrive\\Desktop\\Repos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\austi\\AppData\\Roaming\\NuGet\\NuGet.Config",
