@@ -1,8 +1,11 @@
 ﻿@using TheBlogProject.Models
+@using TheBlogProject.Services
 @using X.PagedList
 @using X.PagedList.Mvc.Core
 @using X.PagedList.Web.Common
+@inject IImageService imageService
 @model IPagedList<Blog>
+
 
 
 @{
@@ -10,65 +13,73 @@
 }
 
 
-
 <!-- breadcrumb-area end -->
 <!-- Blog Details Wrapper Start -->
-<div class="blog-details-wrapper section-space--ptb_80">
-    <div class="container">
-        <div class="row row--17">
-            <div class="blog-details-col-8">
-                <div class="row">
+
+
+
+<div class="main-wrapper">
+ <div class="container">
                     <!-- Author Blog Post Wrap Start -->
-                    <div class="author-blog-post-wrap masonary-item cat--3">
+                    <div class="row">
                         @foreach (var blog in Model)
                         {
-                            <a asp-controller="Posts" asp-action="BlogPostIndex" asp-route-id="@blog.Id" class="author-blog-thum">
-                            <img src="../assets/images/author/author-post-01.jpg" alt="">
-                        </a>
-                        <div class="author-blog-post-content">
-                            <div class="blog-details-meta-box">
-                                <div class="post-meta-left-side mb-2">
-                                    <div class="blog-post-category">
-                                        
-                                        <a href="#" class="btn-medium business mr-1"></a>
-                                    </div>
-                   
-                                    <div class="blog-post-author">
-                                        Authored by <a href="#">@blog.BlogUser.FullName</a>
-                                    </div>
+                            <div class="col-lg-6">
+                            <!-- Hero Category Area Start -->
+                                <div class="hero-category-area pb-3">
+                                    <a asp-controller="Posts" asp-action="BlogPostIndex" asp-route-id="@blog.Id" class="single-hero-category-item author-blog-thum" data-aos="fade-up">
+                                        <img src = "@imageService.DecodeImage(blog.ImageData, blog.ContentType)">
+                                        <div class="hero-category-inner-box">
+                                            <h3 class="title">@blog.Name</h3>
+                                            <i class="icon icofont-long-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                   
+                                 
+                                </div><!-- Hero Category Area End -->
                                 </div>
-                                <div class="post-right-side mb-2">
-                                    <span class="post-meta-left-side">
-                                        <span class="post-date">
-                                            <i class="icofont-ui-calendar"></i>
-                                            <a href="#">@blog.Created.ToString("MMM dd, yyyy")</a>
-                                        </span>
-                                    </span>
-                                    <span>10 min read</span>
-                                </div>
-                            </div> 
-                            <h3 class="title mb-2">
-                                <a asp-controller="Posts" asp-action="BlogPostIndex" asp-route-id="@blog.Id">
-                                    @blog.Name
-                                </a>
-                            </h3>
-                            <p class="mb-2">
-                               @blog.Description
-                            </p>
-                        </div>
                         }
                        
                     </div><!-- Author Blog Post Wrap End -->
                    
+</div>
+</div>
+     <!-- Blog Details Wrapper End -->
+
+
+
+            <!-- Trending Topic Area Start -->
+            <div class="trending-topic-area bg-gray section-space--ptb_80">
+                <div class="container">
+                    <!-- Newsletter Subscribe Area Start -->
+                    <div class="newsletter-subscribe-inner section-space--mt_80" data-aos="fade-up">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3">
+                                <div class="section-title mb-4">
+                                    <h3>Subscribe For Newsletter</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="newsletter-input-box">
+                                    <input class="newsletter-input" type="text" placeholder="Enter your email">
+                                    <div class="button-box">
+                                        <a href="#" class="btn-primary btn-large">Subscribe Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsletter-inner-image">
+                            <img class="newsletter-image-01" src="assets/images/shap/1-newsletter.png" alt="">
+                            <img class="newsletter-image-02" src="assets/images/shap/2-newsletter.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Newsletter Subscribe Area End -->
+
                 </div>
             </div>
-           
-            </div>
-        </div>
-
-        <!-- Blog Details Wrapper End -->
-    
-</div>
+            <!-- Trending Topic Area End -->
+       
+        
 <!--=====  End of footer area ========-->
 <!--====================  search overlay ====================-->
 <div class="search-overlay" id="search-overlay">

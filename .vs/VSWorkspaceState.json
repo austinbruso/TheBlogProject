@@ -4,6 +4,7 @@
     "\\Controllers",
     "\\Views",
     "\\Views\\Home",
+    "\\Views\\Posts",
     "\\wwwroot",
     "\\wwwroot\\assets",
     "\\wwwroot\\assets\\images",
