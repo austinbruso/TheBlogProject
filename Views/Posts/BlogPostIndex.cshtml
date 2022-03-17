@@ -7,61 +7,35 @@
 @inject IImageService imageService;
 @model IPagedList<Post>
 
-@{
-    ViewData["Title"] = "Index";
+
+@foreach (var post in Model) {
+
+
+    <div class="container">
+                    <!-- Author Blog Post Wrap Start -->
+                    <div class="row">
+                        @foreach (var blog in Model)
+                        {
+                            <div class="col-lg-2">
+                            <!-- Hero Category Area Start -->
+                                <div class="pb-3">
+                                    <a asp-controller="Posts" asp-action="Details" asp-route-slug="@post.Slug" class="single-hero-category-item author-blog-thum" data-aos="fade-up">
+                                        <img src = "@imageService.DecodeImage(blog.ImageData, blog.ContentType)">
+                                        <div class="tCon">
+                                            <h3 class="title d-flex justify-content-center">@post.Title</h3>
+                                            <p class="description">@post.Abstract</p>
+                                     
+                                        </div>
+                                    </a>
+                                </div><!-- Hero Category Area End -->
+                                </div>
+                        }
+                       
+                    </div><!-- Author Blog Post Wrap End -->
+                   
+</div>
+     
 }
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-
-            <th>
-                Image
-            </th>
-            <th>
-                Title
-            </th>
-            <th>
-                Abstract
-            </th>
-         
-            
-          
-           <th></th>
-            
-    
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                <img style="height:7em;" src ="@imageService.DecodeImage(item.ImageData, item.ContentType)"/>
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Abstract)
-            </td>
-            
-           
-         
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                 <a asp-action="Details" asp-route-slug="@item.Slug">Details</a>
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
-
 
 <hr />
 

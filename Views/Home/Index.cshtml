@@ -18,7 +18,7 @@
 
 
 
-<div class="main-wrapper">
+
  <div class="container">
                     <!-- Author Blog Post Wrap Start -->
                     <div class="row">
@@ -26,16 +26,14 @@
                         {
                             <div class="col-lg-6">
                             <!-- Hero Category Area Start -->
-                                <div class="hero-category-area pb-3">
-                                    <a asp-controller="Posts" asp-action="BlogPostIndex" asp-route-id="@blog.Id" class="single-hero-category-item author-blog-thum" data-aos="fade-up">
+                                <div class="pb-3">
+                                    <a asp-controller="Posts" asp-action="blogPostIndex" asp-route-id="@blog.Id" class="single-hero-category-item author-blog-thum" data-aos="fade-up">
                                         <img src = "@imageService.DecodeImage(blog.ImageData, blog.ContentType)">
                                         <div class="hero-category-inner-box">
                                             <h3 class="title">@blog.Name</h3>
                                             <i class="icon icofont-long-arrow-right"></i>
                                         </div>
                                     </a>
-                                   
-                                 
                                 </div><!-- Hero Category Area End -->
                                 </div>
                         }
@@ -43,7 +41,7 @@
                     </div><!-- Author Blog Post Wrap End -->
                    
 </div>
-</div>
+
      <!-- Blog Details Wrapper End -->
 
 

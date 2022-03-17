@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col">
                     @foreach(var tag in Model.Tags) {
-                    <a class="btn btn-warning btn-sm btn-block btn-outline-dark" asp-action="TagIndex" asp-route-tag="@tag.Text.ToLower()">#@tag.Text</a>
+                    <a class="btn btn-primary btn-sm btn-block " asp-action="TagIndex" asp-route-tag="@tag.Text.ToLower()">#@tag.Text</a>
                 }
             </div>
             </div>
@@ -84,7 +84,7 @@
             </div>
 
 
-            <button type="submit" class="btn btn-dark btn-block btn-small">
+            <button type="submit" class="btn btn-block  btn-primary btn-small">
                 Submit
             </button>
 
@@ -94,7 +94,7 @@
 
     else
     {
-        <a class="btn btn-block btn-small btn-dark"  asp-area="Identity" asp-page="/Account/Login">
+        <a class="btn btn-block btn-small btn-primary"  asp-area="Identity" asp-page="/Account/Login">
             Login to add comments</a>
     }
 
@@ -102,8 +102,8 @@
 
 <hr />
 
-<button id="commentSection" class="btn btn-sm btn-dark btn-block">@Model.Comments.Count Comment(S)</button>
-
+@*<button id="commentSection" class="btn btn-sm btn-primary btn-block">@Model.Comments.Count Comments</button>
+*@
 @foreach (var comment in Model.Comments)
 {
 <div class ="media media-border p-0 mb-2 bg-light">   
