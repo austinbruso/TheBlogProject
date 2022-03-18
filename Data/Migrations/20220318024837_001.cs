@@ -2,7 +2,7 @@
 
 namespace TheBlogProject.Data.Migrations
 {
-    public partial class _002 : Migration
+    public partial class _001 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

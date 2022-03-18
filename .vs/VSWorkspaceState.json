@@ -1,14 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Controllers",
-    "\\Views",
-    "\\Views\\Home",
-    "\\Views\\Posts",
-    "\\wwwroot",
-    "\\wwwroot\\assets",
-    "\\wwwroot\\assets\\images",
-    "\\wwwroot\\assets\\js"
+    ""
   ],
   "SelectedNode": "\\TheBlogProject.sln",
   "PreviewInSolutionExplorer": false
