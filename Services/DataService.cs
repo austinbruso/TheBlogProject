@@ -32,11 +32,11 @@ namespace TheBlogProject.Services
             await SeedRolesAsync();
 
             // Task 2: Seed a few users into the system
-            await SeedUserAsync();
+            await SeedUsersAsync();
 
         }
 
-        public async Task SeedRolesAsync()
+        private async Task SeedRolesAsync()
         {
             // If there are already Roles in the system, do nothing.
 
@@ -51,7 +51,7 @@ namespace TheBlogProject.Services
         }
 
 
-        public async Task SeedUserAsync()
+        private async Task SeedUsersAsync()
         {
             // If there are already users in the system, do nothing.
 
