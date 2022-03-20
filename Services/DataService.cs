@@ -51,7 +51,7 @@ namespace TheBlogProject.Services
         }
 
 
-        private async Task SeedUserAsync()
+        public async Task SeedUserAsync()
         {
             // If there are already users in the system, do nothing.
 
