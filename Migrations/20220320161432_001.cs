@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace TheBlogProject.Data.Migrations
+namespace TheBlogProject.Migrations
 {
     public partial class _001 : Migration
     {
