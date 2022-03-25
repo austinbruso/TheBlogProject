@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1sp0Gn79zeYGDgicr+kl3uqcPM0z2SwiOMMw1ChWMlMlokiA82UdJoCNXtp30OgvdLkYTAPm/+yKKHT6b24Npw==",
+  "dgSpecHash": "HO9jUYUUSwkVBj7yfEJZMjsgIE92nSSMEakBfBse8ttWYDfO7XGgLzpG/ja9BVx9eNlhucnd3KgegIsELRQy+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\austi\\OneDrive\\New folder\\TheBlogProject\\TheBlogProject.csproj",
+  "projectFilePath": "C:\\Users\\austi\\Source\\Repos\\austinbruso\\TheBlogProject\\TheBlogProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\austi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\austi\\.nuget\\packages\\mailkit\\2.15.0\\mailkit.2.15.0.nupkg.sha512",
@@ -214,10 +214,7 @@
     "C:\\Users\\austi\\.nuget\\packages\\x.pagedlist\\8.0.7\\x.pagedlist.8.0.7.nupkg.sha512",
     "C:\\Users\\austi\\.nuget\\packages\\x.pagedlist.mvc.core\\8.0.7\\x.pagedlist.mvc.core.8.0.7.nupkg.sha512",
     "C:\\Users\\austi\\.nuget\\packages\\x.pagedlist.web.common\\8.0.7\\x.pagedlist.web.common.8.0.7.nupkg.sha512",
-    "C:\\Users\\austi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512",
-    "C:\\Users\\austi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\austi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\austi\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\austi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []
 }
