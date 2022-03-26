@@ -35,7 +35,7 @@ namespace TheBlogProject
                options.UseNpgsql(
                    services.ConnectionService.GetConnectionString(Configuration)));
 
-            services.AddRazorPages();
+     
 
             services.AddDatabaseDeveloperPageExceptionFilter();
 
@@ -64,6 +64,8 @@ namespace TheBlogProject
             services.AddScoped<ISlugService, BasicSlugService>();
 
             services.AddControllersWithViews();
+            
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
