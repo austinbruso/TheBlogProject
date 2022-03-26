@@ -31,9 +31,9 @@ namespace TheBlogProject
         public void ConfigureServices(IServiceCollection services)
         {
             
-            Services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<ApplicationDbContext>(options =>
                options.UseNpgsql(
-                   services.ConnectionService.GetConnectionString(Configuration)));
+                   Services.ConnectionService.GetConnectionString(Configuration)));
 
      
 
