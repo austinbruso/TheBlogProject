@@ -33,7 +33,7 @@ namespace TheBlogProject
             
             services.AddDbContext<ApplicationDbContext>(options =>
                options.UseNpgsql(
-                   Services.ConnectionService.GetConnectionString(Configuration)));
+                   services.ConnectionService.GetConnectionString(Configuration)));
 
             services.AddRazorPages();
 
