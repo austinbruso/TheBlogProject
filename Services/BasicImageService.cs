@@ -31,7 +31,7 @@ namespace TheBlogProject.Services
 
         public async Task<byte[]> EncodeImageAsync(string fileName)
         {
-            var file = $"{Directory.GetCurrentDirectory()} / wwwroot/assets/images/{fileName}";
+            var file = $"{Directory.GetCurrentDirectory()} /wwwroot/assets/images/{fileName}";
             return await File.ReadAllBytesAsync(file);
         }
 
