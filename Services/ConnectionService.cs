@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -30,7 +30,9 @@ namespace TheBlogProject.Services
                 SslMode = SslMode.Require,
                 TrustServerCertificate = true
             };
+
             return builder.ToString();
         }
+      
     }
 }
